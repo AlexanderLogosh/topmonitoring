@@ -1,0 +1,145 @@
+@media (min-width: 504px) and (max-width: 768px), (min-width: 1024px) {
+
+.sidebar {
+  width: 456px;
+}
+
+
+
+.sidebar__tab-btn {
+  // margin: 0 24px;
+  margin: 0 24px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+
+.sidebar__tab-btn--active {
+  font-size: 22px;
+  line-height: 23px;
+}
+
+
+
+
+
+
+.sidebar__tab {
+  font-size: 16px;
+  line-height: 23px;
+  color: #cecfd0;
+}
+
+
+.sidebar__info-column--left::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 19px;
+  height: 17px;
+  background: url(../img/arrow.png);
+  cursor: pointer;
+}
+
+.sidebar__info-column input {
+  width: 180px;
+  margin: 0 24px 31px;
+  padding: 11px 15px;
+
+}
+
+.sidebar__list {
+ display: none;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.sidebar__list--show {
+  display: block;
+}
+
+.sidebar__list-btn {
+  position: relative;
+  margin: 0;
+  padding: 0 24px;
+  font-size: 14px;
+  line-height: 39px;
+  color: #93999f;
+  background-color: #fff;
+  border-top: 1px solid #ececef;
+  cursor: pointer;
+}
+
+.sidebar__list-btn--first{
+  border: none;
+  line-height: 40px;
+}
+
+
+.sidebar__list-btn::after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 24px;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  border: 2px solid #5494f6;
+  border-radius: 2px;
+  border-left: transparent;
+  border-top: transparent;
+}
+
+.sidebar__list-btn--active::after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 24px;
+  width: 5px;
+  height: 5px;
+  transform: rotate(225deg);
+  border: 2px solid #5494f6;
+  border-radius: 2px;
+  border-left: transparent;
+  border-top: transparent;
+}
+
+.sidebar__list-item {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 24px;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.sidebar__list-item:nth-child(2n) {
+  background-color: #fff;
+}
+
+.sidebar__list-item td:first-child {
+  width: 24px;
+  padding-left: 1px;
+}
+.sidebar__list-item td:nth-child(2) {
+  width: 140px;
+  padding-left: 12px;
+  color: #434851;
+}
+.sidebar__list-item td:last-child {
+  color: #93999f;
+}
+
+.sidebar__list-item:hover {
+  background-color: #c1c5ca;
+}
+.sidebar__list-item img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+
+}
