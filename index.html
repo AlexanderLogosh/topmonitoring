@@ -6,6 +6,7 @@
 	<title>Топ Мониторинг 2018</title>
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header class="page-header">
@@ -18,6 +19,7 @@
 			<div class="page-header__logo">
 				<img src="img/logo.png" alt="Логотип">
 			</div>
+
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li><a class="main-nav__item main-nav__item--active" href="#">Мониторинг</a></li>
@@ -29,13 +31,16 @@
 
 				<div class="main-nav__user-block ">
 					<a class="main-nav__login" href="#">Вход</a>
+					<a class="main-nav__icon-user" href="#"><img src="img/icon-user.png" alt="Иконка входа"></a>
 					<a class="main-nav__sign" href="#">Регистрация</a>
 				</div>
 
-				<div class="main-nav__btn"><span class="visualy-hidden">Открыть меню</span></div>
-			</nav> 
-			
-			
+			</nav>
+			<div class="nav-btn">
+				<span class="visualy-hidden">Открыть меню</span>
+				<div class="nav-btn__line"></div>
+			</div>
+			<div class="nav-overlay"></div>
 		</div> 
 	</header>
 
@@ -1010,981 +1015,377 @@
 
 
 		</section>
+		
 
+			<section class="sidebar2">
+			<b class="sidebar2__tab-btn sidebar2__tab-btn--1">Валюты</b> 
+			<b class="sidebar2__tab-btn sidebar2__tab-btn--2">Избранное</b>
 
-		<div class="center">
+			<div class="sidebar2__tab  sidebar2__tab--1">
+				<table class="sidebar2__table sidebar2__table--left">
+					<tr>
+						<th>Валюта</th>
+						<th>Сегодня</th>
+						<th>Разница</th>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/btc.png" alt="Валюта" class="sidebar__item-img">BTC</td>
+						<td class="arrow arrow__red">9276.50<span class="currency-symbol"> $</span></td>
+						<td>-2.56<span class="currency-symbol"> %</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/eth.png" alt="Валюта" class="sidebar__item-img">ETH</td>
+						<td class="arrow arrow__green">746.29<span class="currency-symbol"> $</span></td>
+						<td>7.82<span class="currency-symbol"> %</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/eur.png" alt="Валюта" class="sidebar__item-img">EUR</td>
+						<td class="arrow arrow__green">75.04<span class="currency-symbol"> р</span></td>
+						<td>8.21<span class="currency-symbol"> %</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/gbp.png" alt="Валюта" class="sidebar__item-img">GBP</td>
+						<td class="arrow arrow__red">85.11<span class="currency-symbol"> р</span></td>
+						<td>-1.84<span class="currency-symbol"> %</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/jpy.png" alt="Валюта" class="sidebar__item-img">JPY</td>
+						<td class="arrow arrow__green">57.81<span class="currency-symbol"> р</span></td>
+						<td>3.86<span class="currency-symbol"> %</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/usd.png" alt="Валюта" class="sidebar__item-img">USD</td>
+						<td class="arrow arrow__red">63.01<span class="currency-symbol"> р</span></td>
+						<td>-12.48<span class="currency-symbol"> %</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/right-sidebar-icons/uah.png" alt="Валюта" class="sidebar__item-img">UAH</td>
+						<td class="arrow arrow__red">27.38<span class="currency-symbol"> р</span></td>
+						<td>5.86<span class="currency-symbol"> %</span></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="sidebar2__tab  sidebar2__tab--2">
+				<table class="sidebar2__table sidebar2__table--right">
+					<tr>
+						<th>Обменник</th>
+						<th>Переходов</th>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">MisteryMoneyBrasil</td>
+						<td>649</td>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">I-obmen</td>
+						<td>630</td>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">MagneticExchange</td>
+						<td>1597</td>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">XMLGold</td>
+						<td>259</td>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">Arbitrcoin</td>
+						<td>9613</td>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">UltraChange</td>
+						<td>943</td>
+					</tr>
+					<tr>
+						<td><img src="img/logo/a.png" alt="Валюта" class="sidebar__item-img">ProstoCash</td>
+						<td>564</td>
+					</tr>
+				</table>
+			</div>
+
 			
+			<div class="banners banners--pc">
+			<div href="http://topmonitoring.ru/" class="partnership">
+				<img class="partnership__img" src="img/hands.png" alt="Стать партнером">
+				<span class="partnership__text">Стать партнером</span>
+				<a href="http://topmonitoring.ru/" class="partnership__link">TopMonitoring.ru</a>
+			</div>
+			<a href="#" class="banners__item"><img src="img/banners/telegram.jpg" alt="Подключи телеграм бота" ></a>
+			<a href="#" class="banners__item"><img src="img/banners/exchange.jpg" alt="Обмен валют" ></a>
 		</div>
 
-	<!-- 	<section class="sidebar">
-			<b class="sidebar__tab-btn sidebar__tab-btn--1">Валюты</b> 
-			<b class="sidebar__tab-btn sidebar__tab-btn--2">Избранное</b>
 
-			<div class="sidebar__tab  sidebar__tab--1">
+		</section>
 
-				<div class="sidebar__info-column sidebar__info-column--left">
-					<input id="c-in" type="text" placeholder="Отдать Валюту">
-
-					<div>
-						<p class="sidebar__list-btn sidebar__list-btn--first">Электронные валюты</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Perfect Money</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>RUB</td>
-							</tr>			
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Криптовалюты</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Perfect Money</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>RUB</td>
-							</tr>			
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Банковские переводы</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Perfect Money</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>RUB</td>
-							</tr>			
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Денежные переводы</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Perfect Money</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>RUB</td>
-							</tr>			
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Наличные</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Perfect Money</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Bitcoin</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>RUB</td>
-							</tr>			
-						</table>
-					</div>
-					
+		<div class="content">
+			<div class="content__inner ">
+				<div class="content__text">
+					<h1>Выгодный курс обмена интернет-валют</h1>
+					<p>Бесплатный сервис мониторинга лучших курсов обмена электронных валют. Наша цель: быстро и качественно 
+					предоставить вам актуальную информацию для обмена Bitcoin, AdvCash, Perfect Money, Qiwi, Webmoney, и многих других валют.<br>
+					<a href="http://topmonitoring.ru/">TopMonitoring.ru</a> экономит самый ценный актив человека — время! Мы собрали более 150 обменных пунктов на одной площадке, 
+					что даёт вам возможность найти действительно самый выгодный для себя вариант. Быть информированным — означает иметь много денег©</p>
+					<span class="text--right">Приступайте к обмену. Удачи!</span>
+					<span class="table-caption">Популярные курсы обмена</span>
 				</div>
-
-
-				<div class="sidebar__info-column sidebar__info-column--right">
-					<input id="c-out" type="text" placeholder="Получить Валюту">
-
-					<div>
-						<p class="sidebar__list-btn sidebar__list-btn--first">Электронные валюты</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Exmo.com</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paypal</td>
-									<td>EUR</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Криптовалюты</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Exmo.com</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paypal</td>
-									<td>EUR</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Банковские переводы</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Exmo.com</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paypal</td>
-									<td>EUR</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Денежные переводы</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Exmo.com</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>MoneyPolo</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Nixmoney</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/pm.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Payeer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/b.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>RUB</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paymer</td>
-									<td>USD</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/p.png" alt="Иконка"></td>
-									<td>Paypal</td>
-									<td>EUR</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Наличные</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Exmo.com</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>MoneyPolo</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>MoneyPolo</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Nixmoney</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/pm.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Payeer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/b.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paymer</td>
-								<td>USD</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/p.png" alt="Иконка"></td>
-								<td>Paypal</td>
-								<td>EUR</td>
-							</tr>
-						</table>
-					</div>
-
+	      <table class="table-exchange">
+	      	<tr>
+	      		<th>Обменник</th>
+	      		<th>Отдадите, BTC</th>
+	      		<th>Получите, ETH</th>
+	      		<th>Резерв</th>
+	      		<th>Отзывы</th>
+	      	</tr>
+	      	<tr>
+	      		<td>MisterMoneyBrasil</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>7.76</td>
+	      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">8</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>I-obmen</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>153.04</td>
+	      		<td><span class="table-exchange__number--red">3</span>/<span class=" table-exchange__number--green">10</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>MagneticExchange</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>58.72</td>
+	      		<td><span class="table-exchange__number--red">3</span>/<span class=" table-exchange__number--green">0</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>XMLGold</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>26.91</td>
+	      		<td><span class="table-exchange__number--red">2</span>/<span class=" table-exchange__number--green">18</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Arbitrcoin</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>15.00</td>
+	      		<td><span class="table-exchange__number--red">2</span>/<span class=" table-exchange__number--green">140</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>UltraChange</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>2.67</td>
+	      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">10</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Обмен.сс</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>72.40</td>
+	      		<td><span class="table-exchange__number--red">72</span>/<span class=" table-exchange__number--green">0</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>ProstoCash</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>3.42</td>
+	      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">0</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Receive Money</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>0.00</td>
+	      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">0</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Armchange</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>3.44</td>
+	      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">7</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>X-Pay</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>495.85</td>
+	      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">1</span></td>
+	      	</tr>
+	      	<tr>
+	      		<td>Exchanger</td>
+	      		<td>1 от 5</td>
+	      		<td>18,352</td>
+	      		<td>1248.57</td>
+	      		<td><span class="table-exchange__number--red">13</span>/<span class=" table-exchange__number--green">5</span></td>
+	      	</tr>
+	      </table>
+	      <div class="content__text">
+					<p>
+						Здесь собрана и упорядочена информация об автоматических и ручных обменниках электронных денег. 
+						Информация предостав- лена в виде таблиц и графиков, отображающих сведения по курсам и 
+						резервам обменных пунктов. В нашем мониторинге обменных пунктов данные об электронных обменных 
+						пунктах постоянно обновляются, с периодичностью в 5-8 секунд. Высокая скорость обновления позволяет 
+						гарантировать наличие самых свежих обменных курсов, что намного упрощает поиск надежного обменника с выгодным курсом.
+					</p>
 				</div>
-
 			</div>
 
-			
-
-
-			<div class="sidebar__tab sidebar__tab--2">
-
-				<div class="sidebar__info-column sidebar__info-column--left">
-					<input id="c-in" type="text" placeholder="Отдать Валюту">
-
-					<div>
-						<p class="sidebar__list-btn sidebar__list-btn--first">Электронные валюты</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Криптовалюты</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Банковские переводы</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Денежные переводы</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Наличные</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>RUB</td>
-							</tr>
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>USD</td>
-							</tr>
-						</table>
-					</div>
-					
+			<div class="info-exchange">
+				<div class="content__text">
+					<h1>Обмен Perfect Money на Money Polo</h1>
+					<p>В таблице ниже отмечены все пункты обмена, которые обменивают Perfect Money на Money Polo по самым выгодным курсам обмена в Интернете. 
+					Обратите внимание на резервы валюты. Каждый обменник тща- тельно проверен администраторами нашего сервиса. </p>
+					<form class="info-exchange__form" action="#" method="GET">
+						<input class="info-exchange__input" id="info-exchange__in" type="number">
+						<input class="info-exchange__input" id="info-exchange__out" type="number">
+						<button class="info-exchange__btn">Расчитать</button>
+					</form>
 				</div>
 
+				<table class="table-exchange">
+		      	<tr>
+		      		<th>Обменник</th>
+		      		<th>Отдадите, BTC</th>
+		      		<th>Получите, ETH</th>
+		      		<th>Резерв</th>
+		      		<th>Отзывы</th>
+		      	</tr>
+		      	<tr>
+		      		<td>MisterMoneyBrasil</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>7.76</td>
+		      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">8</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>I-obmen</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>153.04</td>
+		      		<td><span class="table-exchange__number--red">3</span>/<span class=" table-exchange__number--green">10</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>MagneticExchange</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>58.72</td>
+		      		<td><span class="table-exchange__number--red">3</span>/<span class=" table-exchange__number--green">0</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>XMLGold</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>26.91</td>
+		      		<td><span class="table-exchange__number--red">2</span>/<span class=" table-exchange__number--green">18</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>Arbitrcoin</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>15.00</td>
+		      		<td><span class="table-exchange__number--red">2</span>/<span class=" table-exchange__number--green">140</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>UltraChange</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>2.67</td>
+		      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">10</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>Обмен.сс</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>72.40</td>
+		      		<td><span class="table-exchange__number--red">72</span>/<span class=" table-exchange__number--green">0</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>ProstoCash</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>3.42</td>
+		      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">0</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>Receive Money</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>0.00</td>
+		      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">0</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>Armchange</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>3.44</td>
+		      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">7</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>X-Pay</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>495.85</td>
+		      		<td><span class="table-exchange__number--red">0</span>/<span class=" table-exchange__number--green">1</span></td>
+		      	</tr>
+		      	<tr>
+		      		<td>Exchanger</td>
+		      		<td>1 от 5</td>
+		      		<td>18,352</td>
+		      		<td>1248.57</td>
+		      		<td><span class="table-exchange__number--red">13</span>/<span class=" table-exchange__number--green">5</span></td>
+		      	</tr>
+	      </table>
+				
 
-				<div class="sidebar__info-column sidebar__info-column--right">
-					<input id="c-out" type="text" placeholder="Получить Валюту">
-
-					<div>
-						<p class="sidebar__list-btn sidebar__list-btn--first">Электронные валюты</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Криптовалюты</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Банковские переводы</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Денежные переводы</p>
-						<table class="sidebar__list">
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>EUR</td>
-								</tr>
-								<tr class="sidebar__list-item">
-									<td><img src="img/logo/a.png" alt="Иконка"></td>
-									<td>Adv Cash</td>
-									<td>RUB</td>
-								</tr>
-						</table>
-					</div>
-					<div>
-						<p class="sidebar__list-btn">Наличные</p>
-						<table class="sidebar__list">
-							<tr class="sidebar__list-item">
-								<td><img src="img/logo/a.png" alt="Иконка"></td>
-								<td>Adv Cash</td>
-								<td>EUR</td>
-							</tr>
-						</table>
-					</div>
-
+				<div class="content__text">
+					<p class="content__comment content__comment--red">
+						Всего по направлению Advanced Cash USD -> Сбербанк работает 35 надежных обменных пунктов. 
+						Суммарный резерв обменников: 97 399 150 RUB Сбербанк. Средневзвешенный курс обмена: 59.2842 
+					</p>
+					<p class="content__comment content__comment--grey">
+						Некоторые из представленных здесь обменников имеют дополнительные комиссии. Все комиссии уже учтены 
+						в курсах обмена с расчетом суммы обмена в 
+					</p>
+					<h2>Заголовок</h2>
+					<p>
+						В таблице вы можете увидеть ряд обменных пунктов, любой из которых совершает ручной или автоматический обмен 
+						Адвансед кэш доллары > карта Сбербанка России. Обратите внимание на метки, которые иногда установлены возле 
+						названий обменников в листинге. Для быстрого перехода на сайт обменного пункта нажмите один раз мышью на строку обменника. 
+						Если после перехода на вебсайт обменника вами не была обнаружена возможность обменять деньги, советуем сразу 
+						же обратиться к администратору сайта. Возможны разные сбои и неполадки системы, когда автоматический обмен Advanced Cash USD
+						 на Сбербанк провести невозможно, но доступен обмен денег вручную. Если же выбранный вами обменник так и не обменял Adv Cash USD на 
+						 Sber bank online, пожалуйста, поставьте нас в известность. Мы своевременно примем соответствующие меры:
+					</p>
+					<h2>Репутация обменников</h2>
+					<p>Вы можете полностью доверять любому из представленных здесь обменников. 
+					На сайте BestChange размещаются только работающие и надежные пункты обмена, прошедшие проверку нашим </p>
 				</div>
-
+				
 			</div>
 
+			<div class="content__footer">
+				<span>Добавить страницу:</span>
+				<a href="#">В закладки</a>
+				<a href="#">В соцсети</a>
+				<a href="#">На формум</a>
+				<a href="#">На сайт</a>
+			</div>
+			                   
+		</div>
 
+		<div class="banners banners--mobile">
+			<div href="http://topmonitoring.ru/" class="partnership">
+				<img class="partnership__img" src="img/hands.png" alt="Стать партнером">
+				<span class="partnership__text">Стать партнером</span>
+				<a href="http://topmonitoring.ru/" class="partnership__link">TopMonitoring.ru</a>
+			</div>
+			<a href="#" class="banners__item"><img src="img/banners/telegram.jpg" alt="Подключи телеграм бота" ></a>
+			<a href="#" class="banners__item"><img src="img/banners/exchange.jpg" alt="Обмен валют" ></a>
+		</div>
 
-		</section> -->
+	
 	</main>
 
 	<footer class="page-footer container">
@@ -2003,6 +1404,10 @@
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script>
 		
+
+
+		// Выпадающие списки в левом сайдбаре
+
 		buttons = document.querySelectorAll('.sidebar__list-btn');
 		//Создаем массив с всеми элементами buttons и выполняем для каждого функцию addEventListener
 		Array.prototype.forEach.call(buttons, function(e) {
@@ -2017,6 +1422,8 @@
 		      dropdown.classList.toggle('sidebar__list--show');
 		    });
 		});
+
+		// переключение вкладок в ЛЕВОМ сайдбаре 
 
 		var btnLeft = document.querySelector(".sidebar__tab-btn--1");
 		var btnRight = document.querySelector(".sidebar__tab-btn--2");
@@ -2043,6 +1450,55 @@
 			tabLeft.classList.toggle("sidebar__tab--show");
 			tabRight.classList.toggle("sidebar__tab--show");
 		});
+
+		// переключение вкладок в ПРАВОМ сайдбаре 
+
+		var btnLeft2 = document.querySelector(".sidebar2__tab-btn--1");
+		var btnRight2 = document.querySelector(".sidebar2__tab-btn--2");
+		var tabLeft2 = document.querySelector(".sidebar2__tab--1");
+		var tabRight2 = document.querySelector(".sidebar2__tab--2");
+
+		btnLeft2.classList.add("sidebar__tab-btn--active");
+		tabLeft2.classList.add("sidebar__tab--show");
+	
+
+		btnLeft2.addEventListener("click", function(event) {
+			event.preventDefault();
+			btnLeft2.classList.toggle("sidebar__tab-btn--active");
+			btnRight2.classList.toggle("sidebar__tab-btn--active");
+			tabLeft2.classList.toggle("sidebar__tab--show");
+			tabRight2.classList.toggle("sidebar__tab--show");
+		});
+
+
+		btnRight2.addEventListener("click", function(event) {
+			event.preventDefault();
+			btnLeft2.classList.toggle("sidebar__tab-btn--active");
+			btnRight2.classList.toggle("sidebar__tab-btn--active");
+			tabLeft2.classList.toggle("sidebar__tab--show");
+			tabRight2.classList.toggle("sidebar__tab--show");
+		});
+
+		// Меню на мобильной версии
+
+		var navBtn = document.querySelector(".nav-btn");
+		var navBlock = document.querySelector(".main-nav");
+		var navOverlay = document.querySelector(".nav-overlay");
+
+		navBtn.addEventListener("click", function(event) {
+			event.preventDefault();
+			navBtn.classList.toggle("nav-btn--active");
+			navBlock.classList.toggle("main-nav--show");
+			navOverlay.classList.toggle("nav-overlay--show");
+		});
+
+		navOverlay.addEventListener("click", function(event) {
+			event.preventDefault();
+			navBtn.classList.toggle("nav-btn--active");
+			navBlock.classList.toggle("main-nav--show");
+			navOverlay.classList.toggle("nav-overlay--show");
+		});
+
 	</script>
 </body>
 </html>

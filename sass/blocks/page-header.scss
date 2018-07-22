@@ -2,7 +2,9 @@
   box-sizing: border-box;
   background-color: #1f5fc0;
   min-height: 96px;
+  width: 100%;
   padding-top: 20px;
+  overflow: hidden;
   @media (min-width: 1024px) {
     height: 144px;
     padding-top: 0;
@@ -13,7 +15,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .page-header__logo img {
@@ -25,6 +27,13 @@
   width: 249px;
   height: 34px;
  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+  .page-header__logo img {
+    width: 200px;
+    height: 27px;
+  }
 }
 
 .page-header__info {

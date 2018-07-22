@@ -1,26 +1,22 @@
+html {
+
+}
 body {
   background-color: #e7e7ef;
   font-family: 'Gotham Pro';
   font-weight: 300;
   font-style: normal;
+
+  min-width: 506px;
 }
-.container {
-  box-sizing: border-box;
-	width: 95%;
-	margin: 0 auto;
 
-	@media (min-width: 425px) {
-	  // width: 80%;
-	 }
+	//  @media (min-width: 768px) {
+	//   width: 90%;
+	//  }
 
-	 @media (min-width: 768px) {
-	  width: 90%;
-	 }
-
-	@media (min-width: 1023px) {
-		max-width: 1608px;
-	}
-}
+	// @media (min-width: 1023px) {
+	// 	max-width: 1608px;
+	// }
 
 .visualy-hidden {
   position: absolute;
@@ -32,11 +28,29 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden; 
 }
+.container {
+  box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 main.container {
+  display: flex;
   position: relative;
   top: -24px;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+  .container {
+  width: 99%;
+  max-width: 1600px;
+  }
+
+  main.container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }

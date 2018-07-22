@@ -3,10 +3,12 @@
 
 @import "scaffolding.scss";
 
-@import "global/fonts.scss";
+// @import "global/fonts.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/sidebar.scss";
+@import "blocks/content.scss";
+@import "blocks/banners.scss";
 
 
 @import "blocks/page-footer.scss";
