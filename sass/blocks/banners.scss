@@ -1,23 +1,29 @@
+// код для баннеров и блока "стать партнером"
+
 .banners {
 	box-sizing: border-box;
-	width: 456px;
+	width: 100%;
 	margin: 0 auto;
-	// order: 2;
+	clear: right;
 }
-.banners--pc {
-	display: none;
-}
+
 .banners__item {
 	display: block;
-	width: 384px;
+	box-sizing: border-box;
+	width: 100%;
 	margin: 24px auto;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .partnership {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 26px 0;
+	padding: 26px 0 20px;
 	width: 100%;
 	border-top: 1px solid #e7e7ef;
 	background-color: #fff;	
@@ -28,7 +34,7 @@
 
 .partnership__text {
 	font-size: 22px;
-	line-height: 28px;
+	line-height: 39px;
 }
 
 .partnership__link {
@@ -43,11 +49,45 @@
 	text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+	.banners {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		clear: right;
+	}
+	.banners__item {
+		width: 48%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.banners {
+		float: right;
+		display: inline-block;
+		width: 25%;
+		clear: right;
+	}
+	.banners__item {
+		width: 100%;
+	}
+}
+
 @media (min-width: 1440px) {
-	.banners--pc {
-		display: block;
+	.banners{
+		width: 27%;
 	}
-	.banners--mobile {
-		display: none;
+}
+
+@media (min-width: 1680px) {
+	.banners {
+		width: 24%;
 	}
+}
+
+@media (min-width: 1680px) {
+	// .banners {
+	// 	width: 384px;
+	// }
+
 }

@@ -1,0 +1,108 @@
+.contacts .content__inner {
+	padding-bottom: 50px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 35px;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 300;
+}
+
+.contact-form__label {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.contact-form__label::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 16px;
+}
+
+.contact-form__label--name:after {
+	width: 16px;
+	height: 19px;
+	background: url("../img/icon-user-grey.png");
+}
+.contact-form__label--email:after {
+	width: 22px;
+	height: 16px;
+	background: url("../img/icon-mail.png");
+}
+
+.contact-form__name,
+.contact-form__email,
+.contact-form__comment {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 15px;
+	border-radius: 4px;
+	border: 1px solid #cecfd0;
+}
+
+.contact-form__name,
+.contact-form__email {
+ padding-right: 48px;
+}
+
+.contact-form__comment {
+	height: 135px;
+	margin-bottom: 25px;
+}
+.contact-form__name:hover,
+.contact-form__email:hover,
+.contact-form__comment:hover,
+.contact-form__name:focus,
+.contact-form__email:focus,
+.contact-form__comment:focus {
+	outline: none;
+	border: 1px solid #3f87f5;
+}
+
+.contact-form__btn {
+	width: 100%;
+	padding: 10px 45px;
+	background-color: #3f87f5;
+	border: none;
+	border-radius: 4px;
+	color: white;
+}
+
+.contact-form__btn:hover,
+.contact-form__btn:focus {
+	background-color: #1f5fc0
+}
+
+
+
+@media (min-width: 768px) {
+	// .contact-form {
+	// 	width: 670px;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
+
+	.contact-form__label {
+	  width: 48%;
+	}
+
+	.contact-form__btn {
+		width: auto;
+	}
+}
+
+@media (min-width: 1280px) {
+	.contacts .content__inner {
+		border-bottom: 1px solid #ececef;
+	}
+}

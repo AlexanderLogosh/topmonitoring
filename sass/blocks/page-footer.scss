@@ -2,12 +2,14 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 0 12px;
 	padding-bottom: 20px;
+
 }
 .page-footer__coopyright {
-	width: 190px;
+	width: auto;
 	margin: 0;
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 20px;
 	color: #afb4b9;
 }
@@ -19,11 +21,20 @@
   width: 105px;
 }
 
+@media (min-width: 506px) {
+	.page-footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.page-footer__coopyright {
+		width: 250px;
+	}
+}
+
 @media (min-width: 768px) {
 	.page-footer__coopyright {
 		width: auto;
 	}
-
 }
 
 
@@ -36,7 +47,7 @@
 }
 
 .page-footer__social-btn--twitter { 
-	background-position: -10px -0px; width: 22px; height: 19px;
+	background-position: -10px 3px; width: 22px; height: 24px;
 }
 .page-footer__social-btn--in { 
 	background-position: -10px -29px; width: 21px; height: 19px; 
